@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+/* start Css nav bar dropsown*/
+
+.wrapper{
+  width:100%;
+}
+
+.wrapper .navbar{
+  background:linear-gradient(135deg, #0079bf, #5067c5);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 25px;
+}
+
+.wrapper .navbar ul li a{
+  color: #fff;
+}
+
+.wrapper .navbar .left ul,
+.wrapper .navbar .right ul li a{
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.wrapper .navbar .left ul li,
+.wrapper .navbar .right img{
+  margin: 0 10px;
+}
+
+.wrapper .navbar .right a{
+  text-align: right;
+}
+
+.wrapper .navbar .right a span{
+  font-size: 10px;
+}
+
+.wrapper .navbar .right ul li{
+  position: relative;
+}
+
+.wrapper .navbar .right ul li .dropdown{
+  position: absolute;
+  top: 55px;
+  right: 0;
+  background:#0079bf ;
+  padding: 10px 25px;
+  display: none;
+}
+
+.wrapper .navbar .right ul li .dropdown .fas{
+  margin-right: 10px;
+}
+
+
+.wrapper .navbar .right ul li.active .dropdown{
+  display: block;
+}
+/* end Css nav bar dropsown*/
+/*start card create todolist*/
+ .mod-add{
+    background-color: rgba(9,30,66,.04);
+    box-shadow: none;
+    border: none;
+    color: #172b4d;
+    display: table-cell;
+    height: 80px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    width: inherit;
+    width: 350px;
+    padding: 5px;
+  }
+
+.board-title{
+  background-color: #97a0af;
+    background-size: cover;
+    background-position: 50%;
+    color: #fff;
+    line-height: 20px;
+    padding: 8px;
+    position: relative;
+    text-decoration: none;
+}
+
+
+.dropdown-menu ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}
+/*css image upload */
+.profile .container .row form img{
+  width: 250px;
+  height: 250px;
+  position: relative;
+  border-radius: 100%;
+  border: 6px solid #F8F8F8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+#uploadImage + label{
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin-bottom: 0;
+  border-radius: 100%;
+  background: #FFFFFF;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+}
+
+/*.avatar-upload {
+  position: relative;
+  max-width: 205px;
+  margin: 30px auto;
+}
+.avatar-upload .avatar-edit {
+
+  position: absolute;
+  right: -15px;
+  z-index: 1;
+  top: 10px;
+}
+.avatar-upload .avatar-edit input {
+  display: none;
+  top: 200px;
+}
+.avatar-upload .avatar-edit input + label {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin-bottom: 0;
+  border-radius: 100%;
+  background: #FFFFFF;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+}
+.avatar-upload .avatar-edit input + label:hover {
+  background: #f1f1f1;
+  border-color: #d6d6d6;
+}
+.avatar-upload .avatar-edit input + label:after {
+  content: "\f040";
+  font-family: 'FontAwesome';
+  color: #757575;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
+.avatar-upload .avatar-preview {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  border-radius: 100%;
+  border: 6px solid #F8F8F8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.avatar-upload .avatar-preview > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+*/
+
+/* css profil*/
+
+.container h1{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 62px;
+}

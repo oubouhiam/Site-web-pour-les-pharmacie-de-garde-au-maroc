@@ -1,0 +1,244 @@
+body {
+  color: #00171F;
+  font-family: Lato, sans-serif;
+  background-color: #f6f6f6;
+}
+
+a {
+  color: #007EA7;
+  text-decoration: none;
+}
+
+p {
+  color: #444;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h1 {
+  padding-bottom: 10px;
+  margin-top: 0;
+  font-size: 42px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #ddd;
+  cursor: default;
+}
+
+h2 {
+  color: #003459;
+  margin-bottom: 10px;
+}
+
+table {
+  margin-top: 20px;
+  width: 100%;
+  color: #29516d;
+  font-size: 14px;
+  border-spacing: 0;
+  
+  th,
+  td {
+    padding: 10px;
+  }
+  
+  thead th {
+    text-align: left;
+    border-bottom: 1px solid #ddd;    
+  }
+  
+  tbody tr:nth-of-type(odd) {
+    background-color: #f6f6f6;
+  }
+  
+  tbody tr:hover {
+    background-color: #ecf7ff;
+  }
+}
+
+.btn {
+  padding: 10px;
+  margin: 0 5px;
+  border: 0;
+  color: white;
+  background-color: #00A8E8;
+  
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.btn-delete {
+  background-color: #d90000;
+}
+
+/**
+  Container
+*/
+.app-container {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100vh;
+}
+
+
+/**
+  Navigation
+*/
+.nav {
+  flex: 1;
+  max-width: 180px;
+  background-color: #007EA7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.nav__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  color: #ccc;
+  font-size: 24px;
+  letter-spacing: 1px;
+  background-color: #00171F;
+  cursor: default;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+.nav__list {
+  margin: 40px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__list-item {
+  position: relative;
+}
+
+.nav__list-item--active {
+  padding: 10px 0 10px 15px;
+  
+  .nav__item-link {
+    padding: 15px 15px;
+    color: #1a1a1a;
+    font-weight: 700;
+    background-color: #FFFBFC;
+    // border-top-left-radius: 8px;
+    // border-bottom-left-radius: 8px;
+  }
+}
+
+.nav__item-link {
+  display: block;
+  padding: 10px 30px;
+  color: #eee;
+}
+
+/**
+  App View
+*/
+.app-view {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+/**
+  Utility Bar
+*/
+.utility-bar {
+  height: 50px;
+  font-size: 13px;
+  font-weight: 300;
+  background-color: #002a38;
+}
+
+.utility-bar__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  height: 100%;
+}
+
+.utility-bar__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.utility-bar__list-item {
+  
+}
+
+.utility-bar__item-link {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 50px;
+  
+  svg,
+  svg path {
+    fill: #007EA7 !important;
+    transition: fill 200ms ease-out;    
+  }
+  
+  &:hover {
+    svg,
+    svg path {
+      fill: #00A8E8 !important;
+    }
+  }
+}
+
+.utility-bar__indicator {
+  position: relative;
+  left: -7px;  
+  top: 9px;
+  width: 14px;
+  height: 14px;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  background-color: #d90000;
+  border-radius: 100%;
+}
+
+.utility-bar__account {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  
+  &:hover {
+    .utility-bar__account-name {
+      color: #eee;
+    }
+  }
+}
+
+.utility-bar__account-avatar {
+  display: inline-block;
+  margin-right: 10px;  
+  width: 32px;
+  height: 32px;
+  background-color: #666;
+  background-image: url('http://keenanstaffieri.com/wp-content/uploads/2014/07/keenan_avatar2.jpg');
+  background-size: 100%;
+  border-radius: 100%;
+}
+
+.utility-bar__account-name {
+  color: #00A8E8;
+  transition: color 200ms ease-out;
+}  
+
+/**
+  Content
+*/
+.content {
+  flex: 1;
+  padding: 30px;
+  background-color: #FFFBFC;
+  -webkit-font-smoothing: antialiased;  
+}
